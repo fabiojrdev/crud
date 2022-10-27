@@ -1,0 +1,170 @@
+#box{
+    font-size: 80px !important;
+    margin-left: 38% !important;
+    margin-top: -35% !important;
+    color: #3a235b;
+}
+#color-box{
+    color: #3a235b;
+}
+
+.bloons-all{
+    width: 250px !important;
+    height: 125px !important;
+    background-color: #c7c7c7 !important;
+    /* border: 1px solid rgb(150, 150, 150); */
+    border-radius: 5px 5px 5px 5px;
+    position: relative !important;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.3)!important;
+    margin-top: 5% !important;
+}
+.bloons-footer-all{
+    width: 100%;
+    height: 18px;
+    position: absolute !important;
+    bottom: 0px;
+    border-radius: 0px 0px 5px 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.bloons-all h1,h2,h3,h4,h5,h6{
+    padding: 15px !important;
+    color: white;
+}
+/* .bloons-v h6{
+    color:rgb(209, 209, 209);
+} */
+.bloons-footer-all:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.bloons-footer-all a {
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 6em !important;
+    text-decoration: none;
+    color: rgb(179, 179, 179);
+    font-size: 12px;
+
+}
+.bloons-footer-all a:hover{
+    color: white;
+}
+
+/* .bloons-y{
+    width: 250px;
+    height: 125px;
+    background-color: #c7c7c7;
+    border: 1px solid rgb(150, 150, 150);
+    border-radius: 5px 5px 5px 5px;
+    position: relative;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.3);
+    margin-top: 5%;
+}
+.bloons-footer-y{
+    width: 100%;
+    height: 18px;
+    position: absolute;
+    bottom: 0px;
+    border-radius: 0px 0px 5px 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.bloons-y h1,h2,h3,h4,h5,h6{
+    padding: 15px;
+    color: white;
+}
+.bloons-footer-y:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.bloons-footer-y a {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em;
+    text-decoration: none;
+    color: rgb(179, 179, 179);
+    font-size: 12px;
+
+}
+.bloons-footer-y a:hover{
+    color: white;
+}
+.bloons-r{
+    width: 250px;
+    height: 125px;
+    background-color: #c7c7c7;
+    border: 1px solid rgb(150, 150, 150); 
+    border-radius: 5px 5px 5px 5px;
+    position: relative;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.3);
+    margin-top: 5%;
+}
+.bloons-footer-r{
+    width: 100%;
+    height: 18px;
+    position: absolute;
+    bottom: 0px;
+    border-radius: 0px 0px 5px 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.bloons-r h1,h2,h3,h4,h5,h6{
+    padding: 15px;
+    color: white;
+}
+.bloons-footer-r:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.bloons-footer-r a {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em;
+    text-decoration: none;
+    color: rgb(179, 179, 179);
+    font-size: 12px;
+
+}
+.bloons-footer-r a:hover{
+    color: white;
+}
+.bloons-b{
+    width: 250px;
+    height: 125px;
+    background-color: #c7c7c7;
+    border: 1px solid rgb(150, 150, 150);
+    border-radius: 5px 5px 5px 5px;
+    position: relative;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.3);
+    margin-top: 5%;
+}
+.bloons-footer-b{
+    width: 100%;
+    height: 18px;
+    position: absolute ;
+    bottom: 0px;
+    border-radius: 0px 0px 5px 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.bloons-b h1,h2,h3,h4,h5{
+    padding: 15px;
+    color: white;
+}
+.bloons-footer-b:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.bloons-footer-b a {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em;
+    text-decoration: none;
+    color: rgb(179, 179, 179);
+    font-size: 12px;
+
+}
+.bloons-footer-b a:hover{
+    color: white;
+} */
+
+
+

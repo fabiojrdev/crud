@@ -1,0 +1,283 @@
+ @import 'style.css';
+/* @import 'login.css'; */
+@import 'bootstrap.css';
+/* Google Font Link */
+/* @import url('https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+.sidebar{
+  position: fixed !important;
+  left: 0 !important;
+  top: 0 !important;
+  height: 100%;
+  width: 78px;
+  background: #3a235b; /* #11101D */
+  padding: 6px 14px !important;
+  z-index: 99 !important;
+  transition: all 0.5s ease;
+}
+.sidebar.open{
+  width: 250px !important;
+}
+.sidebar .logo-details{
+  height: 60px;
+  display: flex;
+  align-items: center !important;
+  position: relative;
+}
+.sidebar .logo-details .icon{
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.sidebar .logo-details .logo-text{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.sidebar.open .logo-details .icon,
+.sidebar.open .logo-details .logo-text{
+  opacity: 1;
+}
+.sidebar .logo-details #btn{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 22px;
+  transition: all 0.4s ease;
+  font-size: 23px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.sidebar.open .logo-details #btn{
+  text-align: right;
+}
+.sidebar i{
+  color: #fff;
+  height: 60px;
+  min-width: 50px;
+  font-size: 28px;
+  text-align: center;
+  line-height: 60px;
+}
+.sidebar .nav-list{
+  margin-top: 20px !important;
+  height: 100% !important;
+}
+.sidebar li{
+  position: relative !important;
+  margin: 8px 0 !important;
+  list-style: none !important;
+}
+.sidebar li .tooltip{
+  position: absolute !important;
+  top: -20px !important;
+  left: calc(100% + 15px) !important;
+  z-index: 3 !important;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  padding: 6px 12px !important;
+  border-radius: 4px !important;
+  font-size: 15px !important;
+  font-weight: 400;
+  opacity: 0;
+  white-space: nowrap;
+  pointer-events: none;
+  transition: 0s;
+}
+.sidebar li:hover .tooltip{
+  opacity: 1 !important;
+  pointer-events: auto;
+  transition: all 0.4s ease;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+}
+.sidebar.open li .tooltip{
+  display: none;
+}
+.sidebar input{
+  font-size: 15px;
+  color: #FFF;
+  font-weight: 400;
+  outline: none;
+  height: 50px;
+  width: 100%;
+  width: 50px;
+  border: none;
+  border-radius: 12px;
+  transition: all 0.5s ease;
+  background: #553588;
+}
+.sidebar.open input{
+  padding: 0 20px 0 50px !important;
+  width: 100% !important;
+}
+.sidebar .bi-search{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 22px;
+  background: #553588;
+  color: #FFF;
+}
+.sidebar.open .bi-search:hover{
+  background: #341e57;
+  color: #FFF;
+}
+.sidebar .bi-search:hover{
+  background: #FFF;
+  color: #11101d;
+}
+.sidebar li a{
+  display: flex !important;
+  height: 100% !important;
+  width: 100% !important;
+  border-radius: 12px !important;
+  align-items: center !important;
+  text-decoration: none !important;
+  transition: all 0.4s ease !important;
+  background: #3a235b;
+}
+.sidebar li a:hover{
+  background: #FFF;
+}
+.sidebar li a .links-sidebar{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.4s;
+}
+.sidebar.open li a .links-sidebar{
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+.sidebar li a:hover .links-sidebar,
+.sidebar li a:hover i{
+  transition: all 0.5s ease !important;
+  color: #3a235b !important;
+}
+.sidebar li i{
+  height: 50px !important;
+  line-height: 50px !important;
+  font-size: 18px !important;
+  border-radius: 12px !important;
+}
+.sidebar li.profile{
+  position: fixed !important;
+  height: 60px !important;
+  width: 78px !important;
+  left: 0 !important;
+  bottom: 0px !important; /* com a estrutura antiga estava -8 */
+  padding: 10px 14px !important;
+  background: #553588 !important;
+  transition: all 0.5s ease !important;
+  overflow: hidden !important;
+}
+.sidebar.open li.profile{
+  width: 250px !important;
+}
+.sidebar li .profile-details{
+  display: flex !important;
+  align-items: center !important;
+  flex-wrap: nowrap !important;
+}
+.sidebar li img{
+  height: 45px !important;
+  width: 45px !important;
+  object-fit: cover !important;
+  border-radius: 6px !important;
+  margin-right: 10px !important;
+}
+.sidebar li.profile .name,
+.sidebar li.profile .job{
+  font-size: 15px!important ;
+  font-weight: 400 !important;
+  color: #fff !important;
+  white-space: nowrap !important;
+}
+.sidebar li.profile .job{
+  font-size: 12px !important;
+}
+.sidebar .profile #log_out{
+  position: absolute !important;
+  top: 50% !important;
+  right: 0 !important;
+  transform: translateY(-50%) !important;
+  background: #553588 !important;
+  width: 100% !important;
+  height: 60px !important;
+  line-height: 60px !important;
+  border-radius: 0px !important;
+  transition: all 0.5s ease !important;
+}
+.sidebar.open .profile #log_out{
+  width: 50px !important;
+  background: none !important;
+}
+.home-section{
+  position: relative !important;
+  background: #261d35;
+  min-height: 100vh;
+  top: 0;
+  left: 78px !important;
+  width: calc(100% - 78px) !important;
+  transition: all 0.5s ease;
+  z-index: 2 !important;
+}
+.sidebar.open ~ .home-section{
+  left: 250px !important;
+  width: calc(100% - 250px) !important;
+}
+.home-section .text{
+  display: inline-block !important;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 25px !important;
+}
+@media (max-width: 420px) {
+  .sidebar li .tooltip{
+    display: none;
+  }
+}
+.btn-products{
+   display: absolute;
+  height: 40px;;
+  width: 120px;
+  border-radius: 12px;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  background: #ffffff;
+    
+}
+.separator{
+    width: 100%;
+    border-bottom: 1px solid #f0f0f0;
+}
+.table-priority{
+    position: absolute !important;
+    width: calc(100% - 78px) !important;
+}
+
+th{
+    font-size: 13px;
+}
+td{
+    font-size: 13px;
+}
+.editing{
+    color: #ffb466;
+}
